@@ -13,5 +13,8 @@ In terminal
 * `npm install` to install dependencies.
 * Running `gulp serve`  to start the app.
 
+## Building
+* In terminal, run `gulp component --name componentName`
+
 ## Pushing
 * `origin1`
