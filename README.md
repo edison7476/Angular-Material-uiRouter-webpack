@@ -11,3 +11,6 @@ Once you have `node` and `npm`, install the following as globals:
 In terminal 
 * `npm install` to install dependencies.
 * Running `gulp serve`  to start the app.
+
+## Pushing
+* `origin1`
