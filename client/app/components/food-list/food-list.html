@@ -1,0 +1,19 @@
+<div>
+  <md-toolbar layout="row" class="md-hue-3">
+    <div class="md-toolbar-tools">
+      <span>Food List</span>
+    </div>
+  </md-toolbar>
+
+  <md-content>
+    <md-list flex>
+      <md-list-item class="md-3-line" ng-repeat="item in vm.foodItems" ng-click="null">
+        <!-- <img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" /> -->
+        <div class="md-list-item-text" layout="column">
+          <!-- <h3>{{ item.who }}</h3> -->
+          <h4>{{ item.name }}</h4>
+          <p>{{ item.short_name }}</p>
+        </div>
+      </md-list-item>
+      <md-content>
+</div>

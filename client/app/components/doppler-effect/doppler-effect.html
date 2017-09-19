@@ -1,0 +1,19 @@
+<div layout-margin layout-padding>
+  <div layout layout-align="center center">
+      <img style="filter: hue-rotate({{ vm.multiplier * vm.velocity }}deg)"
+           src="./img/star-small.png">
+  </div>
+  <div layout layout-align="space-around center">
+      <md-input-container flex="40" layout layout-align="space-around center">
+          <h3>Velocity (km/s)</h3>
+          <input flex="50"
+                 type="text"
+                 ng-model="vm.velocity"
+                 step="0.1" 
+                 decimal>
+      </md-input-container>
+
+      <md-slider flex="40" ng-model="vm.velocity" step="0.1" min="-100" max="100">
+      </md-slider>
+  </div>
+</div>
