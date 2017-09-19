@@ -9,6 +9,5 @@ Once you have `node` and `npm`, install the following as globals:
 
 ## Running the App
 In terminal 
-* `cd samrtSparrow` to move to the app folder.
 * `npm install` to install dependencies.
 * Running `gulp serve`  to start the app.
