@@ -1,3 +1,4 @@
+# Angualr + Material + uiRouter + Webpack
 # Getting Started
 ## Dependencies
 Tools needed to run this app:
@@ -9,6 +10,11 @@ Once you have `node` and `npm`, install the following as globals:
 
 ## Running the App
 In terminal 
-* `cd samrtSparrow` to move to the app folder.
 * `npm install` to install dependencies.
 * Running `gulp serve`  to start the app.
+
+## Building
+* In terminal, run `gulp component --name componentName`
+
+## Pushing
+* `origin1`
