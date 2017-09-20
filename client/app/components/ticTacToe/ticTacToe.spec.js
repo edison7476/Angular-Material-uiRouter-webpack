@@ -1,16 +1,16 @@
-import FoodListModule from './food-list.module'
-import FoodListController from './food-list.controller';
-import FoodListComponent from './food-list.component';
-import FoodListTemplate from './food-list.html';
+import TicTacToeModule from './ticTacToe'
+import TicTacToeController from './ticTacToe.controller';
+import TicTacToeComponent from './ticTacToe.component';
+import TicTacToeTemplate from './ticTacToe.html';
 
-describe('Food-list', () => {
+describe('TicTacToe', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(FoodListModule));
+  beforeEach(window.module(TicTacToeModule));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new FoodListController();
+      return new TicTacToeController();
     };
   }));
 
@@ -30,20 +30,20 @@ describe('Food-list', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(FoodListTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+      expect(TicTacToeTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
       // component/directive specs
-      let component = FoodListComponent;
+      let component = TicTacToeComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(FoodListTemplate);
+        expect(component.template).to.equal(TicTacToeTemplate);
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(FoodListController);
+        expect(component.controller).to.equal(TicTacToeController);
       });
   });
 });

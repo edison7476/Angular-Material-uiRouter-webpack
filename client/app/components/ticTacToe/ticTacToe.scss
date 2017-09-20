@@ -1,0 +1,20 @@
+.tic-tac-toe {
+  padding: 20%;
+
+  .tile {
+    background-color: lightgrey;
+    padding-top: 50%;
+    text-align: center;
+    margin: 1%;
+  }
+
+  .player1 {
+    background-color:#2092D8;
+    cursor: default;
+  }
+
+  .player2 {
+    background-color:#DC143C;
+    cursor: default;
+  }
+}

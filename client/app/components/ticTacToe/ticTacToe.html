@@ -1,0 +1,14 @@
+<div class="tic-tac-toe" layout="row" layout-align="center center" layout-wrap>
+  <div flex="33" ng-repeat="(key, value) in vm.tiles">
+    <div class="tile"
+      ng-click="vm.checkTile(key)"
+      ng-class="{Blue: 'player1', Red: 'player2'}[vm.tiles[key]]">{{key}}
+    </div>
+  </div>
+
+  <md-button
+    class="md-raised md-warn"
+    ng-click="vm.init()">Reset
+  </md-button>
+</div>
+

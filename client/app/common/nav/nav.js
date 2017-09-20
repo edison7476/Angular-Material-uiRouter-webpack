@@ -13,11 +13,15 @@ let navModule = angular.module('nav', [
   $stateProvider
     .state('home', {
       url: '/',
-      template: '<doppler-effect></doppler-effect>'
+      template: '<doppler-effect></doppler-effect>',
     })
     .state('foods', {
       url: '/foods',
-      template: '<food-list></food-list>'
+      template: '<food-list></food-list>',
+    })
+    .state('ticTacToe', {
+      url: '/tic-tac-toe',
+      template: '<tic-tac-toe></tic-tac-toe>',
     })
 })
 .component('navBar', navComponent)
