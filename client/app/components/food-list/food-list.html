@@ -1,10 +1,14 @@
-<div>
+<div ng-if="vm.loadingPage" layout="column" layout-align="center center">
+    <h4>Loading...</h4>
+    <md-progress-circular ng-disabled="!vm.loadingPage" class="md-accent md-hue-1" md-diameter="60"></md-progress-circular>
+</div>
+
+<div ng-if="!vm.loadingPage">
   <md-toolbar layout="row" class="md-hue-3">
     <div class="md-toolbar-tools">
       <span>Food List</span>
     </div>
   </md-toolbar>
-
   <md-content>
     <md-list flex>
       <md-list-item class="md-3-line" ng-repeat="item in vm.foodItems" ng-click="null">
@@ -14,6 +18,6 @@
           <h4>{{ item.name }}</h4>
           <p>{{ item.short_name }}</p>
         </div>
-      </md-list-item>
-      <md-content>
+    </md-list-item>
+  <md-content>
 </div>

@@ -3,6 +3,7 @@ class FoodListController {
     'ngInject';
 
     this.foodService = foodService;
+    this.loadingPage = true;
     this.foodItems;
   }
 
@@ -10,6 +11,7 @@ class FoodListController {
     this.foodService
         .getFood()
         .then((response) => {
+            this.loadingPage = false;
             this.foodItems = response.data;
         })
   }
