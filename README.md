@@ -1,4 +1,4 @@
-# Angualr + Material + uiRouter + Webpack
+# Angualr + Material + uiRouter + Webpack + Highcharts
 # Getting Started
 ## Dependencies
 Tools needed to run this app:
