@@ -10,6 +10,7 @@
     "angular-aria": "^1.6.6",
     "angular-material": "^1.1.5",
     "angular-messages": "^1.6.6",
+    "highcharts": "^5.0.14",
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {
