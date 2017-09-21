@@ -37,14 +37,14 @@ class TicTacToeController {
 
   checkWinner() {
     if (this.tiles[1]) {
-      // check 123, 147
+      // check 123, 147.
       if (this.tiles[1] === this.tiles[2] && this.tiles[2] === this.tiles[3] ||
           this.tiles[1] === this.tiles[4] && this.tiles[4] === this.tiles[7]) {
             this.showWinner(this.tiles[1]);
       }
     } 
     if (this.tiles[5]) {
-      // check 258, 456, 159, 357
+      // check 258, 456, 159, 357.
       if (this.tiles[3] === this.tiles[5] && this.tiles[5] === this.tiles[7] ||
           this.tiles[4] === this.tiles[5] && this.tiles[5] === this.tiles[6] ||
           this.tiles[2] === this.tiles[5] && this.tiles[5] === this.tiles[8] ||
@@ -53,7 +53,7 @@ class TicTacToeController {
       }
     } 
     if (this.tiles[9]) {
-      // check 369, 789
+      // check 369, 789.
       if (this.tiles[3] === this.tiles[6] && this.tiles[6] === this.tiles[9] ||
           this.tiles[7] === this.tiles[8] && this.tiles[8] === this.tiles[9]) {
             this.showWinner(this.tiles[9]);
