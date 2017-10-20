@@ -1,9 +1,10 @@
 class TicTacToeController {
-  constructor($mdDialog) {
+  constructor($mdDialog, dialogService) {
     'ngInject';
 
     this.name = 'ticTacToe';
     this.$mdDialog = $mdDialog;
+    this.dialogService = dialogService;
   }
 
   $onInit() {
@@ -61,33 +62,24 @@ class TicTacToeController {
     }
   }
 
-  showAlert(title, content, btnMessage = 'Ok') {
-    // Appending dialog to document.body to cover sidenav in docs app
-    // Modal dialogs should fully cover application
-    // to prevent interaction outside of dialog
-    const dialogDetail = this.$mdDialog.alert()
-      .parent(angular.element(document.body))
-      .clickOutsideToClose(true)
-      .title('Attention')
-      .textContent('This tile has been selected. Please select onther tiles.')
-      .ok('OK')
-    
-      this.$mdDialog.show(dialogDetail);
-  };
+  showAlert() {
+    this.dialogService
+      .showDialog(
+        'Attention',
+        'This tile has been selected. Please select onther tiles.',
+        'OK'
+      );
+  }
 
   showWinner(player) {
     // Appending dialog to document.body to cover sidenav in docs app
     // Modal dialogs should fully cover application
     // to prevent interaction outside of dialog
-    const dialogDetail = this.$mdDialog.confirm()
-      .parent(angular.element(document.body))
-      .clickOutsideToClose(true)
-      .title('Game Over')
-      .textContent(`The Winner is ${player}`)
-      .ok('Reset')
-
-    this.$mdDialog
-      .show(dialogDetail)
+    this.dialogService
+      .confirm(
+        'Game Over',
+        `The Winner is ${player}`,
+        'Reset')
       .then(() => {
         this.init();
       });

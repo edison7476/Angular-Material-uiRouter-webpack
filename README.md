@@ -18,3 +18,6 @@ In terminal
 
 ## Pushing
 * `origin1`
+
+## Modify Template Component
+* generator/component/temp.js

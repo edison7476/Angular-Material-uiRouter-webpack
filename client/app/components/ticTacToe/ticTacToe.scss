@@ -6,15 +6,16 @@
     padding-top: 50%;
     text-align: center;
     margin: 1%;
+    cursor: pointer;
   }
 
   .player1 {
     background-color:#2092D8;
-    cursor: default;
+    cursor: not-allowed;
   }
 
   .player2 {
     background-color:#DC143C;
-    cursor: default;
+    cursor: not-allowed;
   }
 }
